@@ -1,8 +1,13 @@
 package in.koost;
 
-public class Laptop {
+public class Laptop implements Computer {
 
-    public Laptop(){
+   /* public Laptop(){
         System.out.println("Laptop Constructor");
+    }*/
+
+    @Override
+    public void compile() {
+        System.out.println("Laptop compile");
     }
 }

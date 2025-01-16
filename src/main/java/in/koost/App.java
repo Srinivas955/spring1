@@ -16,8 +16,19 @@ public class App
          Alien alien1 = (Alien) context.getBean("alien");
             alien1.setAge(21);
         System.out.println(alien1.getAge());
-        Alien alien2 = (Alien) context.getBean("alien");
-        System.out.println(alien2.getAge());
+        alien1.code();
+
+
+
+
+
+
+
+
+
+
+       /* Alien alien2 = (Alien) context.getBean("alien");
+        System.out.println(alien2.getAge());*/
 
         //System.out.println( "Hello World!" );
     }
