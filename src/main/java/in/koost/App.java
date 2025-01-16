@@ -16,11 +16,12 @@ public class App
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        Desktop desktop = context.getBean("desktop", Desktop.class);
-        desktop.compile();
+      /*  Desktop desktop = context.getBean(Desktop.class);
+        desktop.compile();*/
 
-        Desktop desktop2 = context.getBean("desktop", Desktop.class);
-        desktop.compile();
+        Alien alien = context.getBean(Alien.class);
+        System.out.println(alien.getAge());
+        alien.code();
 
     }
 }

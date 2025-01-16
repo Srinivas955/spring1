@@ -6,12 +6,10 @@ import in.koost.Desktop;
 import in.koost.Laptop;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.*;
 
 @Configuration
+@ComponentScan("in.koost")
 public class AppConfig {
 
 
@@ -25,7 +23,7 @@ public class AppConfig {
         alien.setComputer(comp);
 
         return alien;
-    }*/
+    }*//*
 
 
 
@@ -54,5 +52,5 @@ public class AppConfig {
              //implementing on interface
     public Laptop laptop(){
      return new Laptop();
-    }
+    }*/
 }
