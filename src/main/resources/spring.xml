@@ -6,6 +6,7 @@
 
     <!-- bean definitions here -->
 
-    <bean id="alien" class="in.koost.Alien">    </bean>
+    <bean id="alien" class="in.koost.Alien" scope="prototype">    </bean>
+    <bean id="laptop" class="in.koost.Laptop">    </bean>
 
 </beans>
