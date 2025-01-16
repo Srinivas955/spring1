@@ -2,13 +2,17 @@ package in.koost;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.beans.ConstructorProperties;
 
 @Component("alienapplication")
+@Scope("prototype")
 public class Alien {
 
+    @Value("21")
     private int age;
     //private Laptop laptop;
 
