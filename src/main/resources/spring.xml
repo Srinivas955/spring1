@@ -20,6 +20,6 @@
         <constructor-arg name="laptop" ref="laptop"/>-->
     </bean>
     <bean id="com1" class="in.koost.Laptop">    </bean>
-    <bean id="com2" class="in.koost.Desktop" primary="true"/>
+    <bean id="com2" class="in.koost.Desktop" primary="true" lazy-init="true"/>
 
 </beans>
