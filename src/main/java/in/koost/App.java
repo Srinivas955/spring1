@@ -19,5 +19,8 @@ public class App
         Desktop desktop = context.getBean("desktop", Desktop.class);
         desktop.compile();
 
+        Desktop desktop2 = context.getBean("desktop", Desktop.class);
+        desktop.compile();
+
     }
 }
