@@ -1,14 +1,19 @@
 package in.koost;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.beans.ConstructorProperties;
 
-@Component
+@Component("alienapplication")
 public class Alien {
 
     private int age;
     //private Laptop laptop;
+
+    @Autowired
+    @Qualifier("laptop")
     private Computer computer;
 
    /* @ConstructorProperties({"age", "laptop"})
