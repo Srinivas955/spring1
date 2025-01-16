@@ -18,7 +18,7 @@ public class App
         System.out.println(alien1.getAge());
         alien1.code();
 
-        Desktop desktop = context.getBean(Desktop.class);
+        //Desktop desktop = context.getBean(Desktop.class);
 
 
 

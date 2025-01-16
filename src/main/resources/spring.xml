@@ -8,7 +8,9 @@
 
     <bean id="alien" class="in.koost.Alien" scope="prototype" autowire="byType">
         <property name="age" value="21"/>
-        <!--<property name="computer"  ref="com2"/>-->
+        <property name="computer">
+            <bean id="com1" class="in.koost.Laptop" primary="true"/>
+        </property>
 
         <!--<constructor-arg type="int" value="21"/>
         <constructor-arg type="in.koost.Laptop" ref="laptop"/>-->
@@ -19,7 +21,11 @@
         <!--<constructor-arg name="age" value="21"/>
         <constructor-arg name="laptop" ref="laptop"/>-->
     </bean>
-    <bean id="com1" class="in.koost.Laptop">    </bean>
+<!--
+    <bean id="com1" class="in.koost.Laptop"/>
+-->
+<!--
     <bean id="com2" class="in.koost.Desktop" primary="true" lazy-init="true"/>
+-->
 
 </beans>
