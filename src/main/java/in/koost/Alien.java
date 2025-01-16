@@ -1,9 +1,17 @@
 package in.koost;
 
+import java.beans.ConstructorProperties;
+
 public class Alien {
 
     private int age;
     private Laptop laptop;
+
+    @ConstructorProperties({"age", "laptop"})
+    public Alien(int age, Laptop laptop) {
+        this.age = age;
+        this.laptop = laptop;
+    }
 
     public Laptop getLaptop() {
         return laptop;
