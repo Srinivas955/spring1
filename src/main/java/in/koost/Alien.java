@@ -12,8 +12,8 @@ public class Alien {
     private int age;
     //private Laptop laptop;
 
-    @Autowired
-    @Qualifier("laptop")
+  /*  @Autowired
+    @Qualifier("laptop")*/
     private Computer computer;
 
    /* @ConstructorProperties({"age", "laptop"})
@@ -42,6 +42,9 @@ public class Alien {
         return computer;
     }
 
+    @Autowired
+    @Qualifier("desktop") //when we give both annotations here Qualifier with one class and at another class
+                          //we are giving primary annotation then Qualifier one will execute
     public void setComputer(Computer computer) {
         this.computer = computer;
     }
